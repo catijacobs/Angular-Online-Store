@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { resourceLimits } from 'worker_threads';
 
 @Pipe({
   name: 'filter'
