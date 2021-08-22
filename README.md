@@ -5,9 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## General info
 
 E-commerce store
-It is intended to implement an e-commerce store. You can choose the type of products that will sell. Products should be grouped by categories - for example, in the case of a clothing store, the categories can be Man, Woman, Child, Accessories, etc. There may also be sub-categories like Jackets, Shorts, Blouses, Socks, etc.
-The website is developed using Angular with json-server to manage the "database". 
-For the visual part, I'll use Bootstrap. The website is responsive.
+It is intended to implement an e-commerce store. You can choose the type of products that will sell. Products should be grouped by categories.
+The website is developed using Angular and the products come from a REST Api https://fakestoreapi.com/products and I chose them through Postman. 
+For the visual part, I'll use Bootstrap and Fontawesome. The website is responsive.
+
+
+ 
 
 ## Development server
 
