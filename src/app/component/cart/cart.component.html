@@ -1,13 +1,48 @@
-<div class="container">
-    <div class="card">
-        <h5 class="card-title">My Cart</h5>
+<ng-container *ngIf="true">
+    <div class="card-table">
+        <div class="cart-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Product Name</th>
+                        <th>Product Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Shirt</td>
+                        <td>image</td>
+                        <td>bla bla bla bla bla bla bla</td>
+                        <td>152€</td>
+                        <td>1</td>
+                        <td>152€</td>
+                        <td><button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    
-    <div class="center">
-        <img src="./assets/img/kitten-with-shopping-basket.jpg ">
-        <h4>Your cart is empty!</h4>
-        <br>
-        <h6>Start shooping now :)</h6>
-        <button class="btn btn-primary">Shop Now</button>
+</ng-container>
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        
+        <div class="center">
+            <img src="./assets/img/kitten-with-shopping-basket.jpg ">
+            <h4>Your cart is empty!</h4>
+            <br>
+            <h6>Start shooping now :)</h6>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
     </div>
-</div>
+</ng-container>
