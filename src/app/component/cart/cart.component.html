@@ -16,15 +16,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Shirt</td>
-                            <td>image</td>
-                            <td>bla bla bla bla bla bla bla</td>
-                            <td>152€</td>
-                            <td>1</td>
-                            <td>152€</td>
-                            <td><button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+                        <tr *nfFor="let item of product; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.title}}</td>
+                            <td><img style="width: 120px;" src="{{item.image}}"></td>
+                            <td>{{item.description}}</td>
+                            <td>{{item.price}}€</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.total}}</td>
+                            <td><button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
