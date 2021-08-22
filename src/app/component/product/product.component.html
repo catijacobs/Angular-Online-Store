@@ -26,3 +26,17 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img src="" alt="" class="">
+                <h5>{{item.title}}</h5>
+                <p>description</p>
+                <p>price</p>
+                <button class="btn btn-primary">add to cart</button>
+                </div>
+        </ng-container>    
+    </div>
+</div>
