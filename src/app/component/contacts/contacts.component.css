@@ -3,12 +3,12 @@ h1 {
 }
 
 label {
-    color: #333
+    color: #333;
+    padding-top: 20px;
 }
 
 .btn-send {
-    font-weight: 300;
-    text-transform: uppercase;
+
     letter-spacing: 0.2em;
     width: 80%;
     margin-left: 3px
@@ -21,9 +21,39 @@ label {
 
 .card {
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    background-color: rgb(255,255,255,0.4);
+    box-shadow: 5px 3px 10px 5px gray;
 }
 
 .container{
     padding-bottom: 50px;
+    
+}
+#appContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(251,194,235,1), rgba(179,202,243,1));
+}
+
+input{
+    border:none;
+    background-color: rgba(255,255,255,0);
+    border-bottom:solid black;
+
+}
+select{
+    border:none;
+    background-color: rgba(255,255,255,0);
+    border-bottom:solid black;
+
+}
+
+textarea{
+    border:none;
+    background-color: rgba(255,255,255,0);
+    border-bottom:solid black;
+
 }
