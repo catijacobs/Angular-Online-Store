@@ -10,6 +10,10 @@ input{
 label{
     color: grey;
 }
+.container-fluid{
+    padding-top: 20px;
+}
+
 .form-group{
     margin-top:30px;
 }
