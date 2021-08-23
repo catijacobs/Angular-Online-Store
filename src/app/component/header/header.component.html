@@ -1,15 +1,18 @@
-<header>
-    <div style="background-color: black !important;" class="navbar navbar-dark bg-primary shadow-sm">
+<header class="sticky-top shadow">
+    <div style="background-color: black !important; padding-left: 30px;" class="navbar navbar-dark bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
-           <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;</i>
-           <strong style="font-size: 30px;"> Loja Online</strong>
+           <i style="font-size: 40px;" class="fas fa-store">&nbsp;</i>
+           <strong style="font-size: 30px;"> OnlineStore</strong>
 
-           <div class="form-group">
-               <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search Products">
-           </div>
-           <span class="fas fa-search search-icon"></span>
+
+          
         </div>
-        <div><a routerLink="product">Products</a>&nbsp;&nbsp;&nbsp;<a routerLink="contacts">Contacts</a></div>
+        <div class="menu">
+
+            <a routerLink="homepage">Home</a>&nbsp;&nbsp;&nbsp;<a routerLink="product">Products</a>&nbsp;&nbsp;&nbsp;<a routerLink="contacts">Contacts</a></div>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search Products "> 
+            </div>
         <button routerLink="cart" style="background-color: black !important; border:none;" class="byn btn-primary">
             <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
             <div style="font-size: 10px;"class="badge bg-danger">{{totalItem}}</div>

@@ -14,6 +14,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import {NgcCookieConsentConfig, NgcCookieConsentModule} from 'ngx-cookieconsent';
 import { HomepageComponent } from './component/homepage/homepage.component';
 
+
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
     domain: 'localhost' 
@@ -39,7 +40,8 @@ const cookieConfig:NgcCookieConsentConfig = {
     FilterPipe,
     ContactsComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+  
   ],
   imports: [
     BrowserModule,

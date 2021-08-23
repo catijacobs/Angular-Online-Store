@@ -1,7 +1,7 @@
 .form-control{
     border-radius: 3px;
-    width: 600px;
-    margin-left: 20px;
+    width: 300px;
+
 }
 
 .search-icon{
@@ -10,4 +10,14 @@
     right: 46%;
     top: 20px;
     color: black;
+}
+
+.menu a{
+    color: white !important;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: pink !important;
+    text-decoration: none;
 }
