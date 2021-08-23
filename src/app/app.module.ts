@@ -13,6 +13,9 @@ import { ContactsComponent } from './component/contacts/contacts.component';
 import { FooterComponent } from './component/footer/footer.component';
 import {NgcCookieConsentConfig, NgcCookieConsentModule} from 'ngx-cookieconsent';
 import { HomepageComponent } from './component/homepage/homepage.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { UserComponent } from './component/user/user.component';
 
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -41,6 +44,9 @@ const cookieConfig:NgcCookieConsentConfig = {
     ContactsComponent,
     FooterComponent,
     HomepageComponent,
+    LoginComponent,
+    RegisterComponent,
+    UserComponent,
   
   ],
   imports: [
