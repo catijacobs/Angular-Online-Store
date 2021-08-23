@@ -11,7 +11,24 @@ import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactsComponent } from './component/contacts/contacts.component';
 import { FooterComponent } from './component/footer/footer.component';
+import {NgcCookieConsentConfig, NgcCookieConsentModule} from 'ngx-cookieconsent';
+import { HomepageComponent } from './component/homepage/homepage.component';
 
+const cookieConfig:NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'localhost' 
+  },
+  palette: {
+    popup: {
+      background: '#000'
+    },
+    button: {
+      background: '#f1d600'
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out'
+};
 
 @NgModule({
   declarations: [
@@ -21,14 +38,16 @@ import { FooterComponent } from './component/footer/footer.component';
     ProductComponent,
     FilterPipe,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgcCookieConsentModule.forRoot(cookieConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]
